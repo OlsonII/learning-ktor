@@ -28,7 +28,7 @@ class PetServices(private val unitOfWork: UnitOfWork) : IPetServices {
         return unitOfWork.petRepository.find(petId) ?: throw Exception("Pet not found")
     }
 
-    override fun findAllPets() : List<Pet> {
-        return unitOfWork.petRepository.findAll()
+    override fun findAllPets(ownerId: String) : List<Pet> {
+        return unitOfWork.petRepository.findAllPetsByOwner(ownerId).toList()
     }
 }

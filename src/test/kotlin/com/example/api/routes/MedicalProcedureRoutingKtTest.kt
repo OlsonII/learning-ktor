@@ -1,4 +1,4 @@
-package com.example.api.routes;
+package com.example.api.routes
 
 import com.example.api.plugins.configureApiUtils
 import com.example.api.plugins.configureAuthentication
@@ -29,7 +29,7 @@ import java.util.*
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-public class MedicalProcedureRoutingKtTest {
+class MedicalProcedureRoutingKtTest {
 
     private val connectionString = "mongodb://localhost:27017"
     private val client = KMongo.createClient(connectionString)

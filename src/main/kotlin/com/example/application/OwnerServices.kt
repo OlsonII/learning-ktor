@@ -1,6 +1,5 @@
 package com.example.application
 
-import com.example.domain.entities.Doctor
 import com.example.domain.entities.Owner
 import com.example.domain.services.IOwnerServices
 import com.example.domain.services.requests.RegisterOwnerRequest

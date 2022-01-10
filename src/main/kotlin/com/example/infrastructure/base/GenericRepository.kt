@@ -7,11 +7,7 @@ import org.litote.kmongo.*
 
 abstract class GenericRepository<T>(mongoCollection: MongoCollection<T>) : IGenericRepository<T> where T : Entity {
 
-    private val collection: MongoCollection<T> = mongoCollection;
-//    private val connectionString = ""
-//    val client = KMongo.createClient(connectionString)
-//    private val database = client.getDatabase("")
-//    protected val collection: MongoCollection<T> = database.getCollection/*<T>*/()
+    protected val collection: MongoCollection<T> = mongoCollection
 
     override fun register(entity: T){
         collection.insertOne(entity)

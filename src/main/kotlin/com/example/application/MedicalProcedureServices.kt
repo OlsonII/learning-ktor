@@ -4,7 +4,6 @@ import com.example.domain.entities.MedicalProcedure
 import com.example.domain.services.IMedicalProcedureServices
 import com.example.domain.services.requests.RegisterMedicalProcedureRequest
 import com.example.infrastructure.base.UnitOfWork
-import java.time.LocalDate
 import java.util.*
 
 class MedicalProcedureServices(private val unitOfWork: UnitOfWork) : IMedicalProcedureServices {
